@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shabna weds Santhana · 29 May 2026</title>
+
+  <!-- WhatsApp / Facebook preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Wedding Invitation">
+  <meta property="og:description" content="With warmest regards, we request the pleasure of your company.">
+  <meta property="og:image" content="https://thameenrulz-lgtm.github.io/Marriage-Invitation/preview.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:url" content="https://thameenrulz-lgtm.github.io/Marriage-Invitation/">
+  <meta property="og:site_name" content="Wedding Invitation">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Wedding Invitation">
+  <meta name="twitter:description" content="With warmest regards, we request the pleasure of your company.">
+  <meta name="twitter:image" content="https://thameenrulz-lgtm.github.io/Marriage-Invitation/preview.jpg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Great+Vibes&family=Tangerine:wght@400;700&family=Noto+Sans+Tamil:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; padding: 20px 0; background: #140202; min-height: 100vh; display: flex; justify-content: center; font-family: 'Cormorant Garamond', serif; }
+
+    .wed-stage { position: relative; width: 100%; max-width: 580px; margin: 0 auto; background: radial-gradient(ellipse at top, #5a0a0a 0%, #2d0505 55%, #140202 100%); border-radius: 6px; padding: 3rem 1rem 2rem; overflow: hidden; min-height: 1650px; isolation: isolate; }
+    .wed-stage::before { content: ""; position: absolute; inset: 0; background: radial-gradient(circle at 20% 30%, rgba(201,162,39,0.12) 0%, transparent 40%), radial-gradient(circle at 80% 70%, rgba(201,162,39,0.10) 0%, transparent 40%); pointer-events: none; z-index: 0; }
+
+    .lotus-bg { position: absolute; top: 42%; left: 50%; transform: translate(-50%, -50%); width: 400px; height: 400px; opacity: 0.07; z-index: 0; animation: lotusPulse 8s ease-in-out infinite; }
+    @keyframes lotusPulse { 0%,100% { opacity: 0.05; transform: translate(-50%,-50%) scale(1) rotate(0deg); } 50% { opacity: 0.10; transform: translate(-50%,-50%) scale(1.04) rotate(180deg); } }
+
+    .petal { position: absolute; width: 12px; height: 12px; background: radial-gradient(circle, #e84c4c 0%, #a01818 70%, transparent 100%); border-radius: 70% 0% 70% 0%; pointer-events: none; z-index: 1; animation: petalFall linear infinite; }
+    @keyframes petalFall { 0% { transform: translateY(-40px) rotate(0deg); opacity: 0; } 10% { opacity: 0.9; } 90% { opacity: 0.9; } 100% { transform: translateY(1800px) rotate(720deg); opacity: 0; } }
+
+    .diya-row { position: absolute; left: 0; right: 0; display: flex; justify-content: space-around; z-index: 2; pointer-events: none; }
+    .diya-row.top { top: 14px; }
+    .diya-row.bottom { bottom: 14px; }
+    .diya { position: relative; width: 28px; height: 32px; opacity: 0; animation: diyaLight 0.6s ease-out forwards; }
+    .diya-bowl { position: absolute; bottom: 0; width: 28px; height: 12px; background: linear-gradient(180deg, #c9a227 0%, #7a5a0e 100%); border-radius: 0 0 14px 14px / 0 0 10px 10px; box-shadow: inset 0 -2px 3px rgba(0,0,0,0.4); }
+    .diya-flame { position: absolute; bottom: 10px; left: 50%; transform: translateX(-50%); width: 10px; height: 18px; background: radial-gradient(ellipse at center bottom, #fff3a8 0%, #ffb347 40%, #ff6a00 80%, transparent 100%); border-radius: 50% 50% 40% 40% / 60% 60% 40% 40%; filter: blur(0.4px); animation: flameFlicker 1.2s ease-in-out infinite; transform-origin: bottom center; }
+    .diya-glow { position: absolute; bottom: 6px; left: 50%; transform: translateX(-50%); width: 50px; height: 50px; background: radial-gradient(circle, rgba(255,180,80,0.5) 0%, transparent 60%); animation: glowPulse 1.8s ease-in-out infinite; pointer-events: none; }
+    @keyframes diyaLight { from { opacity: 0; transform: translateY(6px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes flameFlicker { 0%,100% { transform: translateX(-50%) scaleY(1) rotate(-2deg); } 25% { transform: translateX(-50%) scaleY(1.08) rotate(1deg); } 50% { transform: translateX(-50%) scaleY(0.94) rotate(2deg); } 75% { transform: translateX(-50%) scaleY(1.05) rotate(-1deg); } }
+    @keyframes glowPulse { 0%,100% { opacity: 0.5; transform: translateX(-50%) scale(1); } 50% { opacity: 0.8; transform: translateX(-50%) scale(1.15); } }
+    .d1 { animation-delay: 0.2s; } .d2 { animation-delay: 0.4s; } .d3 { animation-delay: 0.6s; } .d4 { animation-delay: 0.8s; } .d5 { animation-delay: 1.0s; }
+    .d6 { animation-delay: 1.2s; } .d7 { animation-delay: 1.4s; } .d8 { animation-delay: 1.6s; } .d9 { animation-delay: 1.8s; } .d10 { animation-delay: 2.0s; }
+    .d1 .diya-flame { animation-delay: 0s; } .d2 .diya-flame { animation-delay: 0.2s; } .d3 .diya-flame { animation-delay: 0.4s; } .d4 .diya-flame { animation-delay: 0.6s; } .d5 .diya-flame { animation-delay: 0.8s; }
+    .d6 .diya-flame { animation-delay: 0.3s; } .d7 .diya-flame { animation-delay: 0.5s; } .d8 .diya-flame { animation-delay: 0.7s; } .d9 .diya-flame { animation-delay: 0.9s; } .d10 .diya-flame { animation-delay: 0.1s; }
+
+    .card { position: relative; z-index: 5; background: linear-gradient(180deg, rgba(253,245,230,0.97) 0%, rgba(246,232,200,0.97) 100%); border: 1px solid rgba(201,162,39,0.6); border-radius: 4px; padding: 120px 28px 32px; text-align: center; box-shadow: 0 0 0 8px rgba(201,162,39,0.15), 0 20px 60px rgba(0,0,0,0.5); animation: cardRise 1.2s cubic-bezier(0.22,1,0.36,1) 0.3s both; }
+    @keyframes cardRise { from { opacity: 0; transform: translateY(30px) scale(0.96); } to { opacity: 1; transform: translateY(0) scale(1); } }
+    .card::before, .card::after { content: ""; position: absolute; width: 32px; height: 32px; border: 1.5px solid #c9a227; }
+    .card::before { top: 10px; left: 10px; border-right: none; border-bottom: none; }
+    .card::after { bottom: 10px; right: 10px; border-left: none; border-top: none; }
+    .corner-tr, .corner-bl { position: absolute; width: 32px; height: 32px; border: 1.5px solid #c9a227; }
+    .corner-tr { top: 10px; right: 10px; border-left: none; border-bottom: none; }
+    .corner-bl { bottom: 10px; left: 10px; border-right: none; border-top: none; }
+
+    .ganesha-frame { position: absolute; top: -80px; left: 50%; transform: translateX(-50%); width: 188px; height: 188px; border-radius: 50%; padding: 6px; background: conic-gradient(from 0deg, #c9a227, #f4d77a, #c9a227, #f4d77a, #c9a227); animation: ganeshaFrameSpin 40s linear infinite, ganeshaReveal 1.4s ease-out 1.0s both; box-shadow: 0 10px 30px rgba(0,0,0,0.5), 0 0 50px rgba(255,200,100,0.4); z-index: 10; }
+    @keyframes ganeshaFrameSpin { to { transform: translateX(-50%) rotate(360deg); } }
+    @keyframes ganeshaReveal { from { opacity: 0; transform: translateX(-50%) scale(0.2); } to { opacity: 1; transform: translateX(-50%) scale(1); } }
+    .ganesha-inner { width: 100%; height: 100%; border-radius: 50%; border: 3px solid #fdf5e6; background: radial-gradient(circle at 50% 45%, #7a0e0e 0%, #5a0a0a 60%, #2d0505 100%); animation: ganeshaCounterSpin 40s linear infinite; overflow: hidden; display: flex; align-items: center; justify-content: center; position: relative; box-shadow: inset 0 0 40px rgba(0,0,0,0.5); }
+    @keyframes ganeshaCounterSpin { to { transform: rotate(-360deg); } }
+    .ganesha-ring-deco { position: absolute; top: -80px; left: 50%; transform: translateX(-50%); width: 220px; height: 220px; border: 1px dashed rgba(201,162,39,0.6); border-radius: 50%; z-index: 9; animation: ringRotate 40s linear infinite; }
+    @keyframes ringRotate { to { transform: translateX(-50%) rotate(360deg); } }
+    .ganesha-ring-outer { position: absolute; top: -92px; left: 50%; transform: translateX(-50%); width: 244px; height: 244px; border: 1px dotted rgba(201,162,39,0.4); border-radius: 50%; z-index: 8; animation: ringRotateReverse 60s linear infinite; }
+    @keyframes ringRotateReverse { to { transform: translateX(-50%) rotate(-360deg); } }
+
+    .audio-control { position: absolute; top: 20px; right: 20px; width: 52px; height: 52px; border-radius: 50%; background: linear-gradient(135deg, #c9a227, #7a5a0e); border: 2px solid #fdf5e6; color: #fdf5e6; cursor: pointer; z-index: 20; display: flex; align-items: center; justify-content: center; font-size: 18px; font-weight: 700; box-shadow: 0 4px 12px rgba(0,0,0,0.4), 0 0 20px rgba(201,162,39,0.4); transition: transform 0.3s ease; animation: audioPulse 2s ease-in-out infinite; font-family: Arial, sans-serif; }
+    .audio-control:hover { transform: scale(1.1); }
+    .audio-control.playing { animation: audioPlayingRing 1.5s ease-in-out infinite; }
+    @keyframes audioPulse { 0%,100% { box-shadow: 0 4px 12px rgba(0,0,0,0.4), 0 0 20px rgba(201,162,39,0.4); } 50% { box-shadow: 0 4px 12px rgba(0,0,0,0.4), 0 0 32px rgba(201,162,39,0.8); } }
+    @keyframes audioPlayingRing { 0%,100% { box-shadow: 0 4px 12px rgba(0,0,0,0.4), 0 0 0 0 rgba(244,215,122,0.7); } 50% { box-shadow: 0 4px 12px rgba(0,0,0,0.4), 0 0 0 12px rgba(244,215,122,0); } }
+    .audio-label { position: absolute; top: 78px; right: 4px; font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 2px; color: #f4d77a; z-index: 20; opacity: 0.9; text-align: center; width: 84px; pointer-events: none; }
+
+    /* Typewriter */
+    .tw { display: inline-block; min-height: 1em; }
+    .tw-cursor { display: inline-block; width: 2px; height: 1em; background: currentColor; margin-left: 2px; vertical-align: middle; animation: blink 0.8s step-end infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .tw-cursor.done { display: none; }
+
+    .om-row { display: flex; justify-content: center; gap: 14px; margin-bottom: 8px; opacity: 0; transition: opacity 0.5s ease; }
+    .om-row.revealed { opacity: 1; }
+    .om-symbol { font-family: 'Cormorant Garamond', serif; font-size: 26px; color: #7a0e0e; width: 42px; height: 42px; border: 1px solid #c9a227; border-radius: 50%; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle, rgba(255,200,100,0.2), transparent 70%); }
+
+    .blessing { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 4px; color: #7a0e0e; margin-bottom: 16px; min-height: 14px; }
+    .invoc { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 12px; color: #6b3410; margin-bottom: 16px; min-height: 40px; line-height: 1.6; }
+
+    .parents-intro { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 3px; color: #6b3410; margin: 16px 0 8px; min-height: 12px; }
+    .parents-names { font-family: 'Cormorant Garamond', serif; font-size: 15px; color: #3a1a0a; line-height: 1.7; min-height: 44px; }
+    .parents-names-tamil { font-family: 'Noto Sans Tamil', sans-serif; font-weight: 600; font-size: 13px; color: #6b3410; line-height: 1.7; margin-top: 4px; min-height: 22px; }
+    .request-line { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 13px; color: #6b3410; line-height: 1.6; margin: 14px 0 6px; min-height: 42px; }
+    .request-line-tamil { font-family: 'Noto Sans Tamil', sans-serif; font-size: 12px; color: #6b3410; line-height: 1.6; margin-bottom: 16px; min-height: 38px; }
+
+    .divider-ornament { display: flex; align-items: center; justify-content: center; gap: 12px; margin: 14px 0; opacity: 0; transition: opacity 1s ease; }
+    .divider-ornament.revealed { opacity: 1; }
+    .divider-ornament .line { flex: 1; max-width: 80px; height: 1px; background: linear-gradient(90deg, transparent, #c9a227, transparent); }
+    .divider-ornament .dot { width: 6px; height: 6px; border-radius: 50%; background: #c9a227; box-shadow: 0 0 8px rgba(201,162,39,0.6); }
+
+    .name-primary { font-family: 'Tangerine', cursive; font-size: 52px; font-weight: 700; color: #7a0e0e; line-height: 1; letter-spacing: 1px; text-shadow: 0 2px 0 rgba(201,162,39,0.2); min-height: 52px; }
+    .name-tamil { font-family: 'Noto Sans Tamil', sans-serif; font-weight: 700; font-size: 19px; color: #a81818; margin-top: 4px; letter-spacing: 0.5px; min-height: 24px; }
+    .name-degree { font-family: 'Cinzel', serif; font-size: 11px; letter-spacing: 3px; color: #6b3410; margin-top: 6px; min-height: 14px; }
+
+    .weds-word { font-family: 'Great Vibes', cursive; font-size: 28px; color: #c9a227; margin: 6px 0 4px; position: relative; display: inline-block; padding: 0 30px; opacity: 0; transform: scale(0.5); transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .weds-word.revealed { opacity: 1; transform: scale(1); }
+    .weds-word::before, .weds-word::after { content: ""; position: absolute; top: 50%; width: 40px; height: 1px; background: linear-gradient(90deg, transparent, #c9a227); }
+    .weds-word::before { left: -20px; }
+    .weds-word::after { right: -20px; background: linear-gradient(90deg, #c9a227, transparent); }
+    .weds-tamil { font-family: 'Noto Sans Tamil', sans-serif; font-weight: 600; font-size: 13px; color: #8b6a0e; min-height: 16px; }
+
+    .groom-origin { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 11px; color: #6b3410; line-height: 1.6; margin-top: 10px; min-height: 54px; }
+
+    .countdown-section { margin: 26px 0 10px; padding: 18px 10px; background: linear-gradient(135deg, #7a0e0e 0%, #a81818 50%, #7a0e0e 100%); border-radius: 6px; color: #fdf5e6; box-shadow: inset 0 0 30px rgba(0,0,0,0.3); opacity: 0; transform: translateY(20px); transition: opacity 1s ease, transform 1s ease; }
+    .countdown-section.revealed { opacity: 1; transform: translateY(0); }
+    .countdown-title { font-family: 'Cinzel', serif; font-size: 10px; letter-spacing: 4px; margin-bottom: 14px; color: #f4d77a; }
+    .countdown-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; }
+    .countdown-cell { background: rgba(253,245,230,0.08); border: 1px solid rgba(244,215,122,0.3); border-radius: 4px; padding: 10px 4px; }
+    .countdown-number { font-family: 'Cormorant Garamond', serif; font-size: 28px; font-weight: 500; color: #f4d77a; line-height: 1; transition: transform 0.3s ease; }
+    .countdown-number.pulse { animation: numberPulse 0.6s ease-out; }
+    @keyframes numberPulse { 0%,100% { transform: scale(1); } 50% { transform: scale(1.15); color: #fff; } }
+    .countdown-label { font-family: 'Cinzel', serif; font-size: 8px; letter-spacing: 2px; color: #fdf5e6; margin-top: 4px; opacity: 0.8; }
+    .countdown-tamil { font-family: 'Noto Sans Tamil', sans-serif; font-size: 10px; color: #f4d77a; margin-top: 10px; opacity: 0.85; }
+
+    .details-grid { display: grid; grid-template-columns: 1fr auto 1fr; gap: 0; margin: 20px 0 16px; padding: 16px 0; border-top: 1px dashed rgba(201,162,39,0.6); border-bottom: 1px dashed rgba(201,162,39,0.6); opacity: 0; transition: opacity 1s ease; }
+    .details-grid.revealed { opacity: 1; }
+    .detail-col { text-align: center; padding: 0 8px; }
+    .detail-label { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 2px; color: #6b3410; }
+    .detail-label-tamil { font-family: 'Noto Sans Tamil', sans-serif; font-size: 10px; color: #6b3410; margin-top: 2px; opacity: 0.7; }
+    .detail-value { font-family: 'Cormorant Garamond', serif; font-size: 20px; font-weight: 500; color: #7a0e0e; margin-top: 6px; }
+    .detail-sub { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 11px; color: #6b3410; }
+    .detail-div { width: 1px; background: linear-gradient(180deg, transparent, #c9a227, transparent); }
+
+    .venue-block { text-align: center; padding: 6px 0 14px; opacity: 0; transition: opacity 1s ease; }
+    .venue-block.revealed { opacity: 1; }
+    .venue-name { font-family: 'Cormorant Garamond', serif; font-size: 19px; font-weight: 500; color: #7a0e0e; margin-top: 4px; }
+    .venue-name-tamil { font-family: 'Noto Sans Tamil', sans-serif; font-weight: 600; font-size: 14px; color: #a81818; margin-top: 2px; }
+    .venue-addr { font-family: 'Cormorant Garamond', serif; font-size: 11px; color: #3a1a0a; line-height: 1.6; margin-top: 6px; }
+
+    .reception-ribbon { background: linear-gradient(90deg, #c9a227, #d4b24a, #c9a227); color: #3a1a0a; padding: 10px 16px; border-radius: 2px; margin: 12px 0; background-size: 200% 100%; opacity: 0; transform: scaleX(0.3); transition: opacity 0.8s ease, transform 0.8s cubic-bezier(0.34, 1.56, 0.64, 1); }
+    .reception-ribbon.revealed { opacity: 1; transform: scaleX(1); animation: ribbonShine 4s ease-in-out infinite 0.8s; }
+    @keyframes ribbonShine { 0%,100% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } }
+    .ribbon-label { font-family: 'Cinzel', serif; font-size: 9px; letter-spacing: 3px; }
+    .ribbon-value { font-family: 'Cormorant Garamond', serif; font-size: 14px; font-weight: 500; margin-top: 2px; }
+
+    .closing { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 12px; color: #6b3410; line-height: 1.6; margin-top: 16px; min-height: 58px; }
+    .couple-signature { text-align: center; margin-top: 16px; font-family: 'Great Vibes', cursive; font-size: 20px; color: #f4e0a8; text-shadow: 0 0 12px rgba(201,162,39,0.5); position: relative; z-index: 5; opacity: 0; transition: opacity 1.5s ease; }
+    .couple-signature.revealed { opacity: 1; }
+
+    .sparkle { position: absolute; width: 3px; height: 3px; background: #ffd86e; border-radius: 50%; box-shadow: 0 0 6px #ffd86e, 0 0 12px #ffb347; animation: sparkleTwinkle 3s ease-in-out infinite; z-index: 3; }
+    @keyframes sparkleTwinkle { 0%,100% { opacity: 0; transform: scale(0.4); } 50% { opacity: 1; transform: scale(1.2); } }
+
+    /* === START OVERLAY with thumbnail === */
+    /* Lock body scroll while overlay is active so the thumbnail is never below the fold */
+    body.overlay-active { overflow: hidden; }
+
+    .start-overlay {
+      position: fixed; top: 0; left: 0; right: 0; bottom: 0;
+      background: radial-gradient(ellipse at center, #2d0505 0%, #140202 100%);
+      z-index: 1000;
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      cursor: pointer;
+      transition: opacity 0.8s ease; padding: 24px 20px;
+      overflow-y: auto;
+    }
+    .start-overlay.hidden { opacity: 0; pointer-events: none; }
+
+    /* Inner container keeps content centered but lets long screens breathe */
+    .start-inner {
+      display: flex; flex-direction: column; align-items: center;
+      max-width: 500px; width: 100%;
+      margin: auto 0;
+    }
+
+    .thumbnail-preview {
+      width: 100%; max-width: 480px; aspect-ratio: 1200/630;
+      background-image: url('preview.jpg');
+      background-size: cover; background-position: center;
+      border-radius: 6px;
+      border: 2px solid #c9a227;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.6), 0 0 30px rgba(201,162,39,0.3);
+      margin-bottom: 24px;
+      animation: thumbFloat 4s ease-in-out infinite, thumbReveal 1s ease-out both;
+    }
+    @keyframes thumbFloat {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+    @keyframes thumbReveal {
+      from { opacity: 0; transform: translateY(20px) scale(0.92); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    .start-btn {
+      font-family: 'Cinzel', serif; font-size: 13px; letter-spacing: 4px; color: #f4d77a;
+      border: 2px solid #c9a227; padding: 16px 34px; border-radius: 4px;
+      background: linear-gradient(135deg, rgba(201,162,39,0.15), rgba(122,90,14,0.15));
+      cursor: pointer; transition: all 0.3s ease;
+      animation: startPulse 2s ease-in-out infinite;
+    }
+    .start-btn:hover { background: linear-gradient(135deg, rgba(201,162,39,0.3), rgba(122,90,14,0.3)); transform: scale(1.05); }
+    @keyframes startPulse {
+      0%, 100% { box-shadow: 0 0 20px rgba(201,162,39,0.3); }
+      50% { box-shadow: 0 0 40px rgba(201,162,39,0.7); }
+    }
+    .start-hint { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 12px; color: #c9a227; margin-top: 16px; opacity: 0.75; }
+
+    @media (max-width: 520px) {
+      .start-overlay { padding: 16px; }
+      .thumbnail-preview { margin-bottom: 20px; max-width: 92%; }
+      .start-btn { font-size: 12px; padding: 14px 28px; letter-spacing: 3px; }
+      .start-hint { font-size: 11px; margin-top: 12px; }
+    }
+    @media (max-height: 600px) {
+      .thumbnail-preview { margin-bottom: 14px; max-width: 70%; }
+      .start-btn { padding: 12px 26px; font-size: 11px; }
+      .start-hint { margin-top: 8px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="wed-stage">
+
+  <button class="audio-control" id="audio-btn" aria-label="Play music">&#9658;</button>
+  <div class="audio-label" id="audio-label">MUSIC</div>
+  <audio id="bg-audio" loop preload="auto" playsinline webkit-playsinline>
+    <source src="song.mp3" type="audio/mpeg">
+  </audio>
+
+  <svg class="lotus-bg" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+    <g fill="none" stroke="#c9a227" stroke-width="1" opacity="0.6">
+      <circle cx="100" cy="100" r="95"/>
+      <circle cx="100" cy="100" r="75"/>
+      <circle cx="100" cy="100" r="55"/>
+      <ellipse cx="100" cy="30" rx="12" ry="35" fill="#c9a227" fill-opacity="0.1"/>
+      <ellipse cx="100" cy="30" rx="12" ry="35" transform="rotate(45 100 100)" fill="#c9a227" fill-opacity="0.1"/>
+      <ellipse cx="100" cy="30" rx="12" ry="35" transform="rotate(90 100 100)" fill="#c9a227" fill-opacity="0.1"/>
+      <ellipse cx="100" cy="30" rx="12" ry="35" transform="rotate(135 100 100)" fill="#c9a227" fill-opacity="0.1"/>
+      <ellipse cx="100" cy="30" rx="12" ry="35" transform="rotate(180 100 100)" fill="#c9a227" fill-opacity="0.1"/>
+      <ellipse cx="100" cy="30" rx="12" ry="35" transform="rotate(225 100 100)" fill="#c9a227" fill-opacity="0.1"/>
+      <ellipse cx="100" cy="30" rx="12" ry="35" transform="rotate(270 100 100)" fill="#c9a227" fill-opacity="0.1"/>
+      <ellipse cx="100" cy="30" rx="12" ry="35" transform="rotate(315 100 100)" fill="#c9a227" fill-opacity="0.1"/>
+    </g>
+  </svg>
+
+  <div class="diya-row top">
+    <div class="diya d1"><div class="diya-glow"></div><div class="diya-bowl"></div><div class="diya-flame"></div></div>
+    <div class="diya d2"><div class="diya-glow"></div><div class="diya-bowl"></div><div class="diya-flame"></div></div>
+    <div class="diya d3"><div class="diya-glow"></div><div class="diya-bowl"></div><div class="diya-flame"></div></div>
+    <div class="diya d4"><div class="diya-glow"></div><div class="diya-bowl"></div><div class="diya-flame"></div></div>
+    <div class="diya d5"><div class="diya-glow"></div><div class="diya-bowl"></div><div class="diya-flame"></div></div>
+  </div>
+
+  <span class="petal" style="left:8%;  animation-duration: 13s; animation-delay: 0s;"></span>
+  <span class="petal" style="left:22%; animation-duration: 16s; animation-delay: 2s;"></span>
+  <span class="petal" style="left:38%; animation-duration: 12s; animation-delay: 4s;"></span>
+  <span class="petal" style="left:55%; animation-duration: 15s; animation-delay: 1s;"></span>
+  <span class="petal" style="left:68%; animation-duration: 14s; animation-delay: 3s;"></span>
+  <span class="petal" style="left:82%; animation-duration: 17s; animation-delay: 5s;"></span>
+  <span class="petal" style="left:92%; animation-duration: 13s; animation-delay: 6s;"></span>
+
+  <span class="sparkle" style="top: 20%; left: 12%; animation-delay: 0s;"></span>
+  <span class="sparkle" style="top: 35%; right: 8%; animation-delay: 1s;"></span>
+  <span class="sparkle" style="top: 60%; left: 6%;  animation-delay: 2s;"></span>
+  <span class="sparkle" style="top: 75%; right: 10%; animation-delay: 0.5s;"></span>
+  <span class="sparkle" style="top: 50%; right: 14%; animation-delay: 1.5s;"></span>
+
+  <div class="card">
+    <div class="corner-tr"></div>
+    <div class="corner-bl"></div>
+
+    <div class="ganesha-ring-outer"></div>
+    <div class="ganesha-ring-deco"></div>
+    <div class="ganesha-frame">
+      <div class="ganesha-inner">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="width:92%;height:92%;">
+          <defs>
+            <radialGradient id="goldHalo" cx="50%" cy="45%" r="55%">
+              <stop offset="0%" stop-color="#fff6c4" stop-opacity="0.5"/>
+              <stop offset="60%" stop-color="#f4d77a" stop-opacity="0.15"/>
+              <stop offset="100%" stop-color="#c9a227" stop-opacity="0"/>
+            </radialGradient>
+            <linearGradient id="pureGold" x1="0%" y1="0%" x2="0%" y2="100%">
+              <stop offset="0%" stop-color="#fff3a8"/>
+              <stop offset="30%" stop-color="#f4d77a"/>
+              <stop offset="70%" stop-color="#c9a227"/>
+              <stop offset="100%" stop-color="#a88419"/>
+            </linearGradient>
+          </defs>
+          <circle cx="100" cy="95" r="90" fill="url(#goldHalo)"/>
+          <g stroke="#f4d77a" stroke-width="0.4" opacity="0.35">
+            <g transform="translate(100 95)">
+              <line x1="0" y1="-84" x2="0" y2="-92"/>
+              <line x1="0" y1="-84" x2="0" y2="-92" transform="rotate(22.5)"/>
+              <line x1="0" y1="-84" x2="0" y2="-92" transform="rotate(45)"/>
+              <line x1="0" y1="-84" x2="0" y2="-92" transform="rotate(67.5)"/>
+              <line x1="0" y1="-84" x2="0" y2="-92" transform="rotate(90)"/>
+              <line x1="0" y1="-84" x2="0" y2="-92" transform="rotate(112.5)"/>
+              <line x1="0" y1="-84" x2="0" y2="-92" transform="rotate(135)"/>
+              <line x1="0" y1="-84" x2="0" y2="-92" transform="rotate(157.5)"/>
+              <line x1="0" y1="-84" x2="0" y2="-92" transform="rotate(180)"/>
+              <line x1="0" y1="-84" x2="0" y2="-92" transform="rotate(202.5)"/>
+              <line x1="0" y1="-84" x2="0" y2="-92" transform="rotate(225)"/>
+              <line x1="0" y1="-84" x2="0" y2="-92" transform="rotate(247.5)"/>
+              <line x1="0" y1="-84" x2="0" y2="-92" transform="rotate(270)"/>
+              <line x1="0" y1="-84" x2="0" y2="-92" transform="rotate(292.5)"/>
+              <line x1="0" y1="-84" x2="0" y2="-92" transform="rotate(315)"/>
+              <line x1="0" y1="-84" x2="0" y2="-92" transform="rotate(337.5)"/>
+            </g>
+          </g>
+          <g fill="url(#pureGold)">
+            <path d="M 46 176 L 154 176 L 160 186 L 40 186 Z"/>
+            <path d="M 52 166 L 148 166 L 154 176 L 46 176 Z" opacity="0.85"/>
+            <path d="M 54 166 Q 60 154 66 166 Z"/>
+            <path d="M 68 166 Q 75 151 82 166 Z"/>
+            <path d="M 84 166 Q 92 149 100 166 Z"/>
+            <path d="M 100 166 Q 108 149 116 166 Z"/>
+            <path d="M 118 166 Q 125 151 132 166 Z"/>
+            <path d="M 134 166 Q 140 154 146 166 Z"/>
+            <ellipse cx="72" cy="161" rx="18" ry="9"/>
+            <ellipse cx="128" cy="161" rx="18" ry="9"/>
+            <path d="M 62 158 Q 54 138 58 118 Q 62 100 78 94 L 122 94 Q 138 100 142 118 Q 146 138 138 158 Z"/>
+            <ellipse cx="100" cy="132" rx="30" ry="22"/>
+            <path d="M 70 100 Q 54 88 46 70 Q 42 64 46 60 Q 50 58 54 64 Q 58 78 66 90 Z"/>
+            <rect x="44" y="48" width="3" height="14" rx="1"/>
+            <path d="M 45 48 Q 42 44 46 40 Q 50 40 50 46 Z"/>
+            <path d="M 130 100 Q 146 88 154 70 Q 158 64 154 60 Q 150 58 146 64 Q 142 78 134 90 Z"/>
+            <circle cx="155" cy="50" r="6" fill="none" stroke="url(#pureGold)" stroke-width="2.5"/>
+            <path d="M 74 126 Q 66 140 70 154 L 80 154 Q 80 144 84 132 Z"/>
+            <circle cx="73" cy="154" r="5"/>
+            <path d="M 126 126 Q 138 138 134 154 L 124 154 Q 124 144 120 132 Z"/>
+            <ellipse cx="100" cy="70" rx="36" ry="32"/>
+            <path d="M 64 58 Q 40 48 34 64 Q 30 82 44 90 Q 58 88 68 76 Z"/>
+            <path d="M 136 58 Q 160 48 166 64 Q 170 82 156 90 Q 142 88 132 76 Z"/>
+            <path d="M 66 48 L 76 30 L 84 44 L 92 26 L 100 20 L 108 26 L 116 44 L 124 30 L 134 48 Z"/>
+            <circle cx="100" cy="16" r="3"/>
+            <rect x="98" y="8" width="4" height="8"/>
+            <path d="M 100 76 Q 98 86 92 94 Q 84 102 78 108 Q 74 114 76 120 Q 80 126 86 124 Q 92 122 94 116 Q 96 112 96 108 Z"/>
+            <path d="M 108 82 L 116 96 L 112 96 Z"/>
+            <path d="M 70 105 Q 100 116 130 105" fill="none" stroke="url(#pureGold)" stroke-width="2"/>
+            <path d="M 66 114 Q 100 126 134 114" fill="none" stroke="url(#pureGold)" stroke-width="1.5"/>
+            <path d="M 96 118 L 100 126 L 104 118 Z"/>
+            <rect x="52" y="86" width="14" height="5" rx="2"/>
+            <rect x="134" y="86" width="14" height="5" rx="2"/>
+            <rect x="66" y="148" width="68" height="6" rx="2" opacity="0.9"/>
+            <circle cx="100" cy="151" r="3"/>
+            <ellipse cx="34" cy="183" rx="6" ry="3"/>
+            <circle cx="28" cy="182" r="2.5"/>
+            <circle cx="27" cy="180" r="0.8" fill="#2d0505"/>
+            <path d="M 40 183 Q 46 186 50 181" fill="none" stroke="url(#pureGold)" stroke-width="1.5"/>
+            <path d="M 30 179 L 27 174" stroke="url(#pureGold)" stroke-width="1" fill="none"/>
+          </g>
+          <g fill="#2d0505">
+            <ellipse cx="86" cy="66" rx="2.5" ry="1.5"/>
+            <ellipse cx="114" cy="66" rx="2.5" ry="1.5"/>
+          </g>
+          <g fill="none" stroke="#7a5a0e" stroke-width="0.5" opacity="0.5">
+            <path d="M 66 48 L 134 48"/>
+            <path d="M 48 70 Q 46 76 50 82"/>
+            <path d="M 152 70 Q 154 76 150 82"/>
+            <path d="M 95 82 Q 92 86 88 88"/>
+            <path d="M 88 94 Q 84 96 82 100"/>
+            <path d="M 82 104 Q 80 108 82 112"/>
+          </g>
+          <text x="100" y="8" font-family="serif" font-size="8" fill="#f4d77a" text-anchor="middle" font-weight="bold" opacity="0.9">&#2384;</text>
+        </svg>
+      </div>
+    </div>
+
+    <div class="om-row" id="om-row">
+      <div class="om-symbol">&#2384;</div>
+      <div class="om-symbol" style="font-size: 22px;">&#21367;</div>
+    </div>
+
+    <div class="blessing"><span class="tw" data-text="SRI RAMAJAYAM  ·  ஸ்ரீ ராமஜயம்" data-speed="60"></span></div>
+    <div class="invoc"><span class="tw" data-text="— With the divine blessings of Sri Andal & Sri Rangamannar —" data-speed="22"></span></div>
+
+    <div class="parents-intro"><span class="tw" data-text="TOGETHER WITH THEIR FAMILIES" data-speed="35"></span></div>
+    <div class="parents-names"><span class="tw" data-text="Mr. P. Rajaguru & Mrs. R. Selvarani Rajaguru" data-speed="25"></span></div>
+    <div class="parents-names-tamil"><span class="tw" data-text="திரு. P. ராஜகுரு & திருமதி. R. செல்வராணி ராஜகுரு" data-speed="35"></span></div>
+
+    <div class="request-line"><span class="tw" data-text="joyfully request your gracious presence on the auspicious wedding of their beloved daughter" data-speed="18"></span></div>
+    <div class="request-line-tamil"><span class="tw" data-text="தங்கள் அன்பு மகளின் திருமண மங்கள நிகழ்வில் தாங்கள் கலந்து கொண்டு வாழ்த்த வேண்டுகிறோம்" data-speed="30"></span></div>
+
+    <div class="divider-ornament" id="div1"><div class="line"></div><div class="dot"></div><div class="line"></div></div>
+
+    <div class="name-primary"><span class="tw" data-text="Shabna Ashmi" data-speed="150"></span></div>
+    <div class="name-tamil"><span class="tw" data-text="ஷப்னா ஆஸ்மி" data-speed="120"></span></div>
+    <div class="name-degree"><span class="tw" data-text="B.Sc" data-speed="80"></span></div>
+
+    <div style="margin: 10px 0;">
+      <div class="weds-word" id="weds-word">weds</div>
+      <div class="weds-tamil"><span class="tw" data-text="வெட்ஸ்" data-speed="100"></span></div>
+    </div>
+
+    <div class="name-primary"><span class="tw" data-text="Santhana Krishnan" data-speed="150"></span></div>
+    <div class="name-tamil"><span class="tw" data-text="சந்தான கிருஷ்ணன்" data-speed="120"></span></div>
+    <div class="name-degree"><span class="tw" data-text="B.Com" data-speed="80"></span></div>
+    <div class="groom-origin"><span class="tw" data-text="S/o Smt. L. Gomathi Lakshmi Narayanan & Sri. R. Lakshmi Narayanan, Kodungaiyur, Chennai" data-speed="18"></span></div>
+
+    <div class="countdown-section" id="countdown-section">
+      <div class="countdown-title">COUNTDOWN TO MUHURTHAM</div>
+      <div class="countdown-grid">
+        <div class="countdown-cell"><div class="countdown-number" id="cd-days">&mdash;</div><div class="countdown-label">DAYS</div></div>
+        <div class="countdown-cell"><div class="countdown-number" id="cd-hours">&mdash;</div><div class="countdown-label">HOURS</div></div>
+        <div class="countdown-cell"><div class="countdown-number" id="cd-mins">&mdash;</div><div class="countdown-label">MINS</div></div>
+        <div class="countdown-cell"><div class="countdown-number" id="cd-secs">&mdash;</div><div class="countdown-label">SECS</div></div>
+      </div>
+      <div class="countdown-tamil">முஹூர்த்த நேரத்திற்கு எண்ணிக்கை</div>
+    </div>
+
+    <div class="details-grid" id="details-grid">
+      <div class="detail-col">
+        <div class="detail-label">DATE · மணநாள்</div>
+        <div class="detail-value">29 · 05 · 2026</div>
+        <div class="detail-sub">Friday · வெள்ளிக்கிழமை</div>
+      </div>
+      <div class="detail-div"></div>
+      <div class="detail-col">
+        <div class="detail-label">MUHURTHAM · முஹூர்த்தம்</div>
+        <div class="detail-value">9:00 &ndash; 10:30</div>
+        <div class="detail-sub">A.M. · காலை</div>
+      </div>
+    </div>
+
+    <div class="venue-block" id="venue-block">
+      <div class="detail-label">VENUE · இடம்</div>
+      <div class="venue-name">Sri Kousalya Mahal A/C</div>
+      <div class="venue-name-tamil">ஸ்ரீ கௌசல்யா மஹால்</div>
+      <div class="venue-addr">
+        No.1, T.V.K. Link Road, Near Krishnamurthy Nagar<br/>
+        Mahakavi Bharathi Nagar (MKB Nagar), near Overbridge<br/>
+        Kodungaiyur, Chennai &mdash; 600 118
+      </div>
+    </div>
+
+    <div class="reception-ribbon" id="reception">
+      <div class="ribbon-label">RECEPTION · வரவேற்பு</div>
+      <div class="ribbon-value">Thursday · 28 May 2026 · 7:00 PM</div>
+    </div>
+
+    <div class="closing"><span class="tw" data-text="Your presence is the most cherished gift we could hope to receive on this blessed day." data-speed="18"></span></div>
+  </div>
+
+  <div class="diya-row bottom">
+    <div class="diya d6"><div class="diya-glow"></div><div class="diya-bowl"></div><div class="diya-flame"></div></div>
+    <div class="diya d7"><div class="diya-glow"></div><div class="diya-bowl"></div><div class="diya-flame"></div></div>
+    <div class="diya d8"><div class="diya-glow"></div><div class="diya-bowl"></div><div class="diya-flame"></div></div>
+    <div class="diya d9"><div class="diya-glow"></div><div class="diya-bowl"></div><div class="diya-flame"></div></div>
+    <div class="diya d10"><div class="diya-glow"></div><div class="diya-bowl"></div><div class="diya-flame"></div></div>
+  </div>
+
+  <div class="couple-signature" id="signature">~ Shabna &amp; Santhana ~</div>
+
+  <!-- START OVERLAY with thumbnail preview -->
+  <div class="start-overlay" id="start-overlay">
+    <div class="start-inner">
+      <div class="thumbnail-preview" aria-hidden="true"></div>
+      <button class="start-btn" id="start-btn">OPEN INVITATION</button>
+      <div class="start-hint">tap to begin · with music</div>
+    </div>
+  </div>
+
+</div>
+
+<script>
+(function() {
+  // === Countdown ===
+  var target = new Date('2026-05-29T09:00:00+05:30').getTime();
+  function setNum(id, val) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var str = String(val).padStart(2, '0');
+    if (el.textContent !== str) {
+      el.textContent = str;
+      el.classList.remove('pulse');
+      void el.offsetWidth;
+      el.classList.add('pulse');
+    }
+  }
+  function tick() {
+    var now = new Date().getTime();
+    var diff = target - now;
+    if (diff <= 0) { setNum('cd-days', 0); setNum('cd-hours', 0); setNum('cd-mins', 0); setNum('cd-secs', 0); return; }
+    var days = Math.floor(diff / 86400000);
+    var hours = Math.floor((diff % 86400000) / 3600000);
+    var mins = Math.floor((diff % 3600000) / 60000);
+    var secs = Math.floor((diff % 60000) / 1000);
+    setNum('cd-days', days); setNum('cd-hours', hours); setNum('cd-mins', mins); setNum('cd-secs', secs);
+  }
+  tick(); setInterval(tick, 1000);
+
+  // === Audio controls ===
+  var btn = document.getElementById('audio-btn');
+  var audio = document.getElementById('bg-audio');
+  var label = document.getElementById('audio-label');
+  var playing = false;
+  function markPlaying() { btn.innerHTML = '&#10074;&#10074;'; btn.classList.add('playing'); if (label) label.textContent = 'PLAYING'; playing = true; }
+  function markPaused() { btn.innerHTML = '&#9658;'; btn.classList.remove('playing'); if (label) label.textContent = 'MUSIC'; playing = false; }
+  if (btn && audio) {
+    btn.addEventListener('click', function(e) {
+      e.stopPropagation();
+      if (playing) { audio.pause(); markPaused(); }
+      else { var p = audio.play(); if (p && p.then) p.then(markPlaying).catch(function(){}); }
+    });
+    audio.addEventListener('play', markPlaying);
+    audio.addEventListener('pause', markPaused);
+  }
+
+  // === Typewriter engine ===
+  function typewrite(el, text, speed) {
+    return new Promise(function(resolve) {
+      el.textContent = '';
+      var cursor = document.createElement('span');
+      cursor.className = 'tw-cursor';
+      el.parentNode.insertBefore(cursor, el.nextSibling);
+      var i = 0;
+      function step() {
+        if (i < text.length) {
+          el.textContent += text.charAt(i);
+          i++;
+          setTimeout(step, speed);
+        } else {
+          cursor.classList.add('done');
+          setTimeout(resolve, 200);
+        }
+      }
+      step();
+    });
+  }
+  function wait(ms) { return new Promise(function(r) { setTimeout(r, ms); }); }
+  function show(el) { if (el) el.classList.add('revealed'); }
+
+  var twNodes = document.querySelectorAll('.tw');
+
+  async function runSequence() {
+    show(document.getElementById('om-row'));
+    await wait(400);
+    await typewrite(twNodes[0], twNodes[0].dataset.text, parseInt(twNodes[0].dataset.speed));
+    await wait(300);
+    await typewrite(twNodes[1], twNodes[1].dataset.text, parseInt(twNodes[1].dataset.speed));
+    await wait(500);
+
+    await typewrite(twNodes[2], twNodes[2].dataset.text, parseInt(twNodes[2].dataset.speed));
+    await wait(200);
+    await typewrite(twNodes[3], twNodes[3].dataset.text, parseInt(twNodes[3].dataset.speed));
+    await wait(200);
+    await typewrite(twNodes[4], twNodes[4].dataset.text, parseInt(twNodes[4].dataset.speed));
+    await wait(400);
+    await typewrite(twNodes[5], twNodes[5].dataset.text, parseInt(twNodes[5].dataset.speed));
+    await wait(200);
+    await typewrite(twNodes[6], twNodes[6].dataset.text, parseInt(twNodes[6].dataset.speed));
+    await wait(600);
+
+    show(document.getElementById('div1'));
+    await wait(500);
+    await typewrite(twNodes[7], twNodes[7].dataset.text, parseInt(twNodes[7].dataset.speed));
+    await wait(200);
+    await typewrite(twNodes[8], twNodes[8].dataset.text, parseInt(twNodes[8].dataset.speed));
+    await wait(150);
+    await typewrite(twNodes[9], twNodes[9].dataset.text, parseInt(twNodes[9].dataset.speed));
+    await wait(400);
+
+    show(document.getElementById('weds-word'));
+    await wait(300);
+    await typewrite(twNodes[10], twNodes[10].dataset.text, parseInt(twNodes[10].dataset.speed));
+    await wait(400);
+
+    await typewrite(twNodes[11], twNodes[11].dataset.text, parseInt(twNodes[11].dataset.speed));
+    await wait(200);
+    await typewrite(twNodes[12], twNodes[12].dataset.text, parseInt(twNodes[12].dataset.speed));
+    await wait(150);
+    await typewrite(twNodes[13], twNodes[13].dataset.text, parseInt(twNodes[13].dataset.speed));
+    await wait(250);
+    await typewrite(twNodes[14], twNodes[14].dataset.text, parseInt(twNodes[14].dataset.speed));
+    await wait(600);
+
+    show(document.getElementById('countdown-section'));
+    await wait(600);
+    show(document.getElementById('details-grid'));
+    await wait(400);
+    show(document.getElementById('venue-block'));
+    await wait(400);
+    show(document.getElementById('reception'));
+    await wait(500);
+
+    await typewrite(twNodes[15], twNodes[15].dataset.text, parseInt(twNodes[15].dataset.speed));
+    await wait(400);
+    show(document.getElementById('signature'));
+  }
+
+  // === Start button with music & sequence ===
+  // Lock body scroll while overlay is showing so thumbnail is always in view
+  document.body.classList.add('overlay-active');
+
+  var overlay = document.getElementById('start-overlay');
+  var startBtn = document.getElementById('start-btn');
+
+  // MOBILE FIX: use touchend + click and call play() SYNCHRONOUSLY on tap
+  // Mobile browsers (iOS Safari, Android Chrome) only allow audio.play()
+  // inside a user-gesture event handler with zero delay.
+  function handleStart(e) {
+    if (e) { e.preventDefault(); e.stopPropagation(); }
+
+    // Call play IMMEDIATELY - no awaits, no setTimeouts before this
+    if (audio) {
+      audio.volume = 1.0;
+      audio.muted = false;
+      var playPromise = audio.play();
+      if (playPromise && playPromise.then) {
+        playPromise.then(function() {
+          markPlaying();
+        }).catch(function(err) {
+          // If first attempt fails, update label so user knows to tap music button
+          if (label) label.textContent = 'TAP ♪';
+          console.warn('Auto-play blocked:', err.name, err.message);
+        });
+      } else {
+        // Older browsers without promise support
+        markPlaying();
+      }
+    }
+
+    // Now hide overlay and start typewriter
+    overlay.classList.add('hidden');
+    document.body.classList.remove('overlay-active');
+    setTimeout(runSequence, 800);
+
+    // Remove listeners so it only fires once
+    startBtn.removeEventListener('click', handleStart);
+    startBtn.removeEventListener('touchend', handleStart);
+  }
+
+  startBtn.addEventListener('click', handleStart);
+  startBtn.addEventListener('touchend', handleStart);
+})();
+</script>
+
+</body>
+</html>
